@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
 import type { RGB } from '@telegram-apps/sdk-vue';
 
 defineProps<{
