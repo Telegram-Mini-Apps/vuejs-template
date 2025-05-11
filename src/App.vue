@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useBackButton } from '@/composables/useBackButton'
+import { useBackButton } from "@/composables/useBackButton";
 
-useBackButton()
+useBackButton();
 </script>
 
 <template>
-    <RouterView />
+  <RouterView />
 </template>
