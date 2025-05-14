@@ -41,5 +41,24 @@ export default defineConfig({
           cert: fs.readFileSync("./.cert/localhost.pem"),
         }
       : undefined,
+    // Allow requests from your domain
+    cors: true,
+    // List of allowed hosts
+    hmr: {
+      host: "localhost",
+    },
+    // Add your domain to the list of allowed hosts
+    watch: {
+      usePolling: true,
+    },
+    // Add your domain to server.allowedHosts
+    proxy: {},
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+    // List of allowed hosts
+    origin: "http://localhost:3000",
+    strictPort: true,
+    allowedHosts: ["analitik.asdf.fvds.ru", "localhost"],
   },
 });
